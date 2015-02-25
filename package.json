@@ -1,0 +1,38 @@
+{
+    "name": "jquery-kpiwidgets",
+    "version": "0.0.38",
+    "description": "Inneractive jQuery widgets for presenting data in a KPI box",
+    "homepage": "http://inner-active.com",
+    "main": "index.html",
+
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+
+    "keywords": [
+        "jquery",
+        "jquery-plugin",
+        "jquery-widget",
+        "Inneractive",
+        "KPI",
+        "Dashboard"
+    ],
+
+    "author": {
+        "name": "Guy Ben Shoshan"
+    },
+
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "http://opensource.org/licenses/MIT"
+        }
+    ],
+
+    "maintainers": [
+        {
+            "name": "guy252",
+            "email": "guy.benshoshan@gmail.com"
+        }
+    ]
+}
