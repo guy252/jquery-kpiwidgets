@@ -107,10 +107,6 @@
                 html: "<div class=\"" + this.options.headerTextStyleClass + "\" style=\"height:" + titleHeight + "px;cursor:" + titleCursor + ";\">" + this.options.title + "</div>",
                 "class": this.options.headerStyleClass,
                 height: titleHeight
-            }).click(function (abc) {
-                if (typeof(_that.options.clickHandler) == "function") {
-                    _that.options.clickHandler.apply()
-                }
             });
 
             var dataDiv = this._createDataDiv(dataCursor).click(function (abc) {
@@ -177,7 +173,8 @@
             var dataDiv = $('<div/>', {
                 html: htmlDataStr,
                 "class": "kpi-data num-trend-kpi-data",
-                height: dataHeight
+                height: dataHeight,
+                style: "cursor: " + dataCursor + ";"
             });
 
             return dataDiv;
