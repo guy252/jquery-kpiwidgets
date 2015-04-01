@@ -24,6 +24,7 @@
  *      footer - text that will appear inside the widget footer                         - default: ""
  *      height - widget height in px                                                    - default: 148
  *      width - widget width in px                                                      - default: 230
+ *      showDecimalPoint - show 2 digits after the decimal point                        - default: true
  *      maxValueForSize - above this number, the widget font size wil decrease
  *                        and get the num-trend-kpi-data-text-small style class         - default: 100000
  *
@@ -74,6 +75,7 @@
             footer: "",
             height: 148,
             width: 230,
+            showDecimalPoint: true,
             maxValueForSize: 100000,
             clickHandler: null,
 
@@ -133,7 +135,7 @@
             var valueStr = value;
 
             try{
-                if(value % 1 == 0){
+                if(value % 1 == 0 || !this.options.showDecimalPoint){
                     valueStr = parseInt(value).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
                 }else{
                     valueStr = parseFloat(value).toFixed(2).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");;
