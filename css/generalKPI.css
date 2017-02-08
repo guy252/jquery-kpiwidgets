@@ -70,6 +70,7 @@
 
 .kpi-trend-up-small {
     background: url("images/trend_up_small.png") no-repeat scroll center right rgba(0, 0, 0, 0);
+    background-position: 5px;
     display: table-cell;
     height: 100%;
     width: 20px;
@@ -77,6 +78,7 @@
 
 .kpi-trend-down-small {
     background: url("images/trend_down_small.png") no-repeat scroll center right rgba(0, 0, 0, 0);
+    background-position: 5px;
     display: table-cell;
     height: 100%;
     width: 20px;

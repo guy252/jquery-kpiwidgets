@@ -9,8 +9,12 @@
 
     <link type="text/css" href="css/generalKPI.css" rel="stylesheet"/>
     <link type="text/css" href="css/numTrendKPI.css" rel="stylesheet"/>
+    <link type="text/css" href="css/topThreeKPI.css" rel="stylesheet"/>
+    <link type="text/css" href="css/percentageKPI.css" rel="stylesheet"/>
 
     <script type="text/javascript" src="js/numTrendKPI.js"></script>
+    <script type="text/javascript" src="js/topThreeKPI.js"></script>
+    <script type="text/javascript" src="js/percentageKPI.js"></script>
 
     <script>
         $(document).ready(function () {
@@ -20,15 +24,58 @@
                 //maxValueForSize: 4000,
 
                 data: {
-                    value: 4900,
+                    value: 49000,
                     trend: "up",
                     symbol: "$"
                 },
 
                 clickHandler: function () {
-                    alert("this is a click")
+                    alert("this is a click");
                 }
             });
+
+            var topThreeKPI = $("#topThreeKPI").TopThreeKPI({
+                title: "TOP GROSSING APPS",
+                footer: "GOAL SET: $2400/DAY",
+
+                data: [{
+                    name: "My App",
+                    value: 1000.23,
+                    symbol: "$",
+                    trend: "up"
+                    //delta: 2 - change delta - optional
+
+                }, {
+                    name: "Another App of mine",
+                    value: 20000,
+                    symbol: "$",
+                    trend: "down"
+                }, {
+                    name: "My Third App",
+                    value: 300,
+                    symbol: "$",
+                    trend: "up"
+                }],
+
+                clickHandler: function () {
+                    alert("this is a click");
+                }
+            });
+
+            var percentageKPI = $("#percentage").PercentageKPI({
+                title: "Top grossing age group",
+                footer: "3,334 users",
+                data: {
+                    value: "18-25",
+                    partial: 234,
+                    total : 3334
+                },
+
+                clickHandler: function(){
+                    alert("this is a click");
+                }
+            });
+
         });
     </script>
 
@@ -37,6 +84,8 @@
 
 <div class="kpi-container-div">
     <div id="numAndTrendKPI" class="kpi-item" style="padding-left: 0px;"></div>
+    <div id="topThreeKPI" class="kpi-item"></div>
+    <div id="percentage" class="kpi-item"></div>
 </div>
 
 </body>

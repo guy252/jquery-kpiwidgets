@@ -4,7 +4,7 @@
  * Author: Guy Ben Shoshan 12/2014.
  * Tested: FF 33, Chrome 39, IE 11, Opera 12, Safari 5
  *
- * Copyright (c) 2014 Inneractive
+ * Copyright (c) 2017 Inneractive
  * Dual licensed under the MIT and GPL licenses:
  *
  * Depends:
