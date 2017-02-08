@@ -2,7 +2,7 @@
   "name": "jquery-kpiwidgets",
   "title": "Inneractive Dashboard Widgets",
   "description": "Inneractive jQuery widgets for presenting data in a KPI box",
-  "version": "1.0.4",
+  "version": "0.1.5",
   "main": "index.html",
   "homepage": "http://inner-active.com",
   "author": {
