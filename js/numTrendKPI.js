@@ -50,7 +50,7 @@
  *          usage:
  *              numTrend = $("#numAndTrendKPI").NumTrendKPI(....);
  *              numTrend.NumTrendKPI("setData", {
- *                  value: 102300,
+ *                   value: 102300,
  *                   trend: "up",
  *                   symbol : "$"
  *              });

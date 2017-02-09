@@ -20,7 +20,6 @@
 .kpi-title {
     background-color: #f4f4f4;
     box-shadow: inset 0 -5px 20px rgba(0,0,0,.05);
-    /*text-shadow: 0 1px 1px #fff;*/
     color: #3e3e3e;
     display: table;
     font-size: 14px;
@@ -49,22 +48,15 @@
 
 .kpi-trend-up {
     background: url("images/trend_up.png") no-repeat scroll right center rgba(0, 0, 0, 0);
-    /*display: table-cell;*/
-    /*height: 56%;*/
     width: 30px;
-    /*border: 1px solid;*/
 }
 
 .kpi-trend-down {
     background: url("images/trend_down.png") no-repeat scroll right center rgba(0, 0, 0, 0);
-    /*display: table-cell;*/
-    /*height: 56%;*/
     width: 30px;
-    /*border: 1px solid;*/
 }
 
 .kpi-trend-flat {
-    /*height: 56%;*/
     width: 30px;
 }
 
@@ -111,7 +103,6 @@
     width: 34px;
     color: #e05d63;
     text-align: center;
-    /*border: 1px solid;*/
 }
 
 .kpi-delta-flat {
@@ -122,6 +113,5 @@
     width: 34px;
     color: #fff;
     text-align: center;
-    /*border: 1px solid;*/
 }
 

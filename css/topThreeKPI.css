@@ -32,7 +32,6 @@
     padding-left: 10px;
     text-align: left;
     vertical-align: middle;
-    /*width: 60%;*/
 }
 
 .top-3-value{
@@ -40,7 +39,6 @@
     display: table-cell;
     font-size: 0.45em;
     vertical-align: middle;
-    /*width: 25%;*/
     text-align: right;
 }
 

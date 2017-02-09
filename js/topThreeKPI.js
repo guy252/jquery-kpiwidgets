@@ -76,12 +76,12 @@
  *          param - JSON Array
  *          usage:
  *              var data = [{
- *                  name: "Fruit Ninja",
+ *                  name: "My App",
  *                  value: 202300,
  *                  symbol: "$",
  *                  trend: "down"
  *              }, {
- *                  name: "Angry Birds",
+ *                  name: "Anothe App of Mine",
  *                  value: 2323444,
  *                  symbol: "$",
  *                  trend: "up"
@@ -132,7 +132,6 @@
             var _that = this;
             var titleHeight = this.options.height / 4;
             var footerHeight = (this.options.footer != "") ? (titleHeight / 2) : 0;
-            //var dataHeight = this.options.height - titleHeight - footerHeight;
             var titleCursor = "";
             var dataCursor = (typeof(_that.options.clickHandler) == "function") ? "pointer" : "";
 
@@ -211,8 +210,6 @@
                     }
 
                     try{
-                        //rowDataValue = rowDataValue.toFixed(2);
-
                         if(rowDataValue % 1 == 0 || !_that.options.showDecimalPoint){
                             rowDataValue = parseInt(rowDataValue).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
                         }else{
